@@ -6679,7 +6679,7 @@ body {
 
 .cover-wrapper {
   overflow: hidden;
-  background: #428bca url("http://timothy.expert/images/coding-1280x800.jpg") center/cover;
+  background: #333;
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
