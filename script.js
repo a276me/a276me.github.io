@@ -1,14 +1,20 @@
 var section = window.location.pathname;
     if (section == "/projects") {
       $("#index").addClass("hide");
+      $("#research").addClass("hide");
+      $("#home").addClass("hide");
       $("#projects").removeClass("hide");
     }
     else if (section == "/research") {
       $("#index").addClass("hide");
+      $("#projects").addClass("hide");
+      $("#home").addClass("hide");
       $("#research").removeClass("hide");
     }
     else if (section == "/home") {
       $("#index").addClass("hide");
+      $("#research").addClass("hide");
+      $("#projects").addClass("hide");
       $("#home").removeClass("hide");
     }
 
