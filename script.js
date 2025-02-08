@@ -7,11 +7,11 @@ var section = window.location.pathname;
       $("#index").addClass("hide");
       $("#research").removeClass("hide");
     }
-    // else if (section == "/contact") {
-    //   $("#index").addClass("hide");
-    //   $("#contact").removeClass("hide");
-    // }
-    
+    else if (section == "/home") {
+      $("#index").addClass("hide");
+      $("#home").removeClass("hide");
+    }
+
     // onclick of one of the navigation buttons
     $( "a[data-hide]" ).on( "click", function() {
       $(window).scrollTop(0);
