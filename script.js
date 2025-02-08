@@ -1,16 +1,17 @@
 var section = window.location.pathname;
-    if (section == "/blog") {
-      $("#index").addClass("hide");
-      $("#blog").removeClass("hide");
-    }
-    else if (section == "/projects") {
+    if (section == "/projects") {
       $("#index").addClass("hide");
       $("#projects").removeClass("hide");
     }
-    else if (section == "/contact") {
+    else if (section == "/research") {
       $("#index").addClass("hide");
-      $("#contact").removeClass("hide");
+      $("#research").removeClass("hide");
     }
+    // else if (section == "/contact") {
+    //   $("#index").addClass("hide");
+    //   $("#contact").removeClass("hide");
+    // }
+    
     // onclick of one of the navigation buttons
     $( "a[data-hide]" ).on( "click", function() {
       $(window).scrollTop(0);
