@@ -1,16 +1,16 @@
 var section = window.location.pathname;
-    if (section == "/blog") {
+    if (section == "/about") {
       $("#index").addClass("hide");
-      $("#blog").removeClass("hide");
+      $("#about").removeClass("hide");
     }
     else if (section == "/projects") {
       $("#index").addClass("hide");
       $("#projects").removeClass("hide");
     }
-    else if (section == "/contact") {
-      $("#index").addClass("hide");
-      $("#contact").removeClass("hide");
-    }
+    // else if (section == "/contact") {
+    //   $("#index").addClass("hide");
+    //   $("#contact").removeClass("hide");
+    // }
     // onclick of one of the navigation buttons
     $( "a[data-hide]" ).on( "click", function() {
       $(window).scrollTop(0);

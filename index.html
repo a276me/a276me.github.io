@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="./style.css">
 
 </head>
-<body>
 <!-- partial:index.partial.html -->
 <html lang="en">
   <head>
@@ -19,38 +18,8 @@
     <title>Andy's astronomy gallary</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:600,800' rel='stylesheet' type='text/css'>
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="http://timothy.expert/apple-touch-icon-57x57.png?v=2">
-    <link rel="apple-touch-icon" sizes="60x60" href="http://timothy.expert/apple-touch-icon-60x60.png?v=2">
-    <link rel="apple-touch-icon" sizes="72x72" href="http://timothy.expert/apple-touch-icon-72x72.png?v=2">
-    <link rel="apple-touch-icon" sizes="76x76" href="http://timothy.expert/apple-touch-icon-76x76.png?v=2">
-    <link rel="apple-touch-icon" sizes="114x114" href="http://timothy.expert/apple-touch-icon-114x114.png?v=2">
-    <link rel="apple-touch-icon" sizes="120x120" href="http://timothy.expert/apple-touch-icon-120x120.png?v=2">
-    <link rel="apple-touch-icon" sizes="144x144" href="http://timothy.expert/apple-touch-icon-144x144.png?v=2">
-    <link rel="apple-touch-icon" sizes="152x152" href="http://timothy.expert/apple-touch-icon-152x152.png?v=2">
-    <link rel="apple-touch-icon" sizes="180x180" href="http://timothy.expert/apple-touch-icon-180x180.png?v=2">
-    <link rel="icon" type="image/png" href="http://timothy.expert/favicon-32x32.png?v=2" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://timothy.expert/favicon-194x194.png?v=2" sizes="194x194">
-    <link rel="icon" type="image/png" href="http://timothy.expert/favicon-96x96.png?v=2" sizes="96x96">
-    <link rel="icon" type="image/png" href="http://timothy.expert/android-chrome-192x192.png?v=2" sizes="192x192">
-    <link rel="icon" type="image/png" href="http://timothy.expert/favicon-16x16.png?v=2" sizes="16x16">
-    <link rel="manifest" href="http://timothy.expert/manifest.json?v=2">
-    <link rel="shortcut icon" href="http://timothy.expert/favicon.ico?v=2">
     <meta name="msapplication-TileColor" content="#2d89ef">
-    <meta name="msapplication-TileImage" content="http://timothy.expert/mstile-144x144.png?v=2">
     <meta name="theme-color" content="#ffffff">
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Tim Robert-Fitzgerald" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="http://timothy.expert/images/og-image.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:site_name" content="Tim Robert-Fitzgerald"/>
-    <meta property="og:description" content="Tim Robert-Fitzgerald is freshmen at Oberlin College, and a freelance web developer on the weekends." />
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tim Robert-Fitzgerald">
-    <meta name="twitter:description" content="Tim Robert-Fitzgerald is freshmen at Oberlin College, and a freelance web developer on the weekends.">
-    <meta name="twitter:image" content="http://timothy.expert/images/og-image.jpg">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -59,8 +28,8 @@
     <![endif]-->
   </head>
   <body>
+    
 
-    <!-- Modal -->
     <div class="modal fade" id="post" tabindex="-1" role="dialog" aria-labelledby="postLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -91,15 +60,11 @@
                 <ul class="nav masthead-nav">
                   <li class="active"><a href="#" data-hide=".cover-wrapper">Home</a></li>
                   <li><a href="projects" data-hide=".cover-wrapper">Astronomy Photos</a></li>
-
+                  <li><a href="about" data-hide=".cover-wrapper">Research</a></li>
                 </ul>
               </nav>
             </div>
           </div>
-
-          
-
-          
 
           <div class="mastfoot">
             <div class="inner">
@@ -107,13 +72,17 @@
             </div>
           </div>
           <div class="inner cover">
-            <h1 class="cover-heading">Discover the Unknown</h1>
-            <p class="lead">The universe is a vast and unknown domain. Its infinite emptiness may frighten some, yet there are so many beautiful objects to discover, galaxies, star clusters, nebulae and more. People rarely have time to rest and take a glance at the stars, hardly taking any effort to discover its beauty. This website contains sets of photos of the night sky that i have taken myself. Thank you for taking the time to observe these images, i hope you find beauty in them.
+            <h1 class="cover-heading" style="text-align: left; margin-left: 20%; font-size: 45px;">こんにちは！</h1>
+            <p class="lead" style="margin: 5% 20% 10%; text-align: left;">
+              My name is Huajian Yang and I am currently a sophmore studying Physics and Mathematics at Cornell University.
+              Current physics research that I am interested about includes astrophysics instrumentation and experimental condensed matter.
+              A favorite hobby of mine is astrophotography! In fact, every astronomy photo on this website was taken by myself.
+              I hope you find them beautiful and interesting. 
+            </p>
           </div>
         </div>
       </div>
-    </section>
-  
+    </section> 
 
     <section class="hide" id="projects">
       <div id="newdiv" style="background-image: url('milky2small.png'); background-attachment: fixed; background-size: cover;">
@@ -124,11 +93,12 @@
                 <div class="inner">
                 <a href="/">
                   <h3 class="masthead-brand"><img src="galaxy.png" alt="Code" class="img-responsive logo" style="color:#fff">Huajian</h3>
-                </a>                <nav>
+                </a>
+                  <nav>
                     <ul class="nav masthead-nav">
                       <li><a href="index" data-hide="#projects">Home</a></li>
                       <li class="active"><a href="#" data-hide="#projects">Astronomy Photos</a></li>
-
+                      <li><a href="about" data-hide="#projects">Research</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -168,7 +138,9 @@
               </div>
             </div>
           </div>
-          <h1 class="text-center" style="margin-top: 20%; margin-bottom: 15%;">Astronomy Photos</h1>
+          <h1 class="text-center" style="margin-top: 15%; margin-bottom: 0%;">Astronomy Photos</h1>
+          <p class="text-center" style="margin: 5% 15% 10%;"> The universe is a vast and unknown domain. Its infinite emptiness may frighten some, yet there are so many beautiful objects to discover, galaxies, star clusters, nebulae and more. People rarely have time to rest and take a glance at the stars, hardly taking any effort to discover its beauty. This website contains sets of photos of the night sky that i have taken myself. Thank you for taking the time to observe these images, i hope you find beauty in them.
+
           <a href="#NGC">
             <div class="arrow bounce" style="margin-top:15%; margin-bottom: 50%;"></div>
           </a>
@@ -287,103 +259,55 @@
       </div>  
     </section>
 
-    <section class="hide" class="projects" id="about">
-      <div class="jumbotron projects-jumbotron" style="background-image: url('milky2small.png');">
+    <section class="hide" id="about">
+      <div id="dd" >
+        <div class="jumbotron blog-jumbotron" style="background-image: url('NGC7000cut.jpeg'); background-attachment: fixed; background-size: cover;">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="inner">
+                  <a href="/">
+                    <h3 class="masthead-brand"><img src="galaxy.png" alt="Code" class="img-responsive logo" style="color:#fff">Huajian</h3>
+                  </a>                <nav>
+                    <ul class="nav masthead-nav">
+                      <li><a href="index" data-hide="#about">Home</a></li>
+                      <li><a href="projects" data-hide="#about">Astronomy Photos</a></li>
+                      <li class="active"><a href="#" data-hide="#about">Research</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <h1 class="text-center">Research and Papers</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="post">
+                <div class="page-header", style="margin-top: 0px;">
+                  <h2 class="h3" style="margin: 5px 2px 5px;">Pressure Gradient Regulator for Cryogentic Systems</h2>
+                  <p class="text-muted" style="margin: 1px 1px 1px;">Spring 2024 - Summer, 2024</p>
+                </div>
+                <p>
+                  Description
+                </p>
+              </div>
+            </div>
+            
+          </div>
+
           <div class="row">
             <div class="col-md-12">
-              <div class="inner">
-              <a href="/">
-                <h3 class="masthead-brand"><img src="galaxy.png" alt="Code" class="img-responsive logo" style="color:#fff">Huajian</h3>
-              </a>                <nav>
-                  <ul class="nav masthead-nav">
-                    <li><a href="index" data-hide="#projects">Home</a></li>
-                    <li class="active"><a href="#" data-hide="#projects">Astronomy Photos</a></li>
-
-                  </ul>
-                </nav>
-              </div>
-              <h1 class="text-center">Astronomy Photos</h1>
+              <hr>
+              <p class="text-center text-muted">Code related to these projects can be found on<a href="https://github.com/a276me">github</a></p>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">M31 Andromeda Galaxy</h3>
-              </div>
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-md-4">
-                    <p class="description"></p>
-                    <p><a href="ANDROM.png" class="btn btn-primary">View Full Size Image</a></p>
-                  </div>
-                  <div class="col-md-8"><img src="ANDROMsmall.png" alt="http://getherecut.com" class="img-responsive"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">M42 Orion Nebula</h3>
-              </div>
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-md-4">
-                    <p class="description"></p>
-                    <p><a href="ORION.png" class="btn btn-primary">View Full Size Image</a></p>
-                  </div>
-                  <div class="col-md-8"><img src="ORIONsmall.png" alt="http://givingshops.com" class="img-responsive"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">NGC7000 North American Nebula</h3>
-              </div>
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-md-4">
-                    <p class="description"></p>
-                    <p><a href="NA.jpg" class="btn btn-primary">View Full Size Image</a></p>
-                  </div>
-                  <div class="col-md-8"><img src="NAsmall.png" alt="http://4thewin.us" class="img-responsive"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">IC1318 Sadr Region</h3>
-              </div>
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-md-4">
-                    <p class="description"></p>
-                    <p><a href="SADR.png" class="btn btn-primary">View Full Size Image</a></p>
-                  </div>
-                  <div class="col-md-8"><img src="SADRsmall.png" alt="http://teamflightbasketball.com" class="img-responsive"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </section> 
 
 
     <!-- <section class="cover-wrapper" id="blog">
