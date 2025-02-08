@@ -1,16 +1,23 @@
 var section = window.location.pathname;
-    if (section == "/blog") {
+    if (section == "/projects") {
       $("#index").addClass("hide");
-      $("#blog").removeClass("hide");
-    }
-    else if (section == "/projects") {
-      $("#index").addClass("hide");
+      $("#research").addClass("hide");
+      $("#home").addClass("hide");
       $("#projects").removeClass("hide");
     }
-    else if (section == "/contact") {
+    else if (section == "/research") {
       $("#index").addClass("hide");
-      $("#contact").removeClass("hide");
+      $("#projects").addClass("hide");
+      $("#home").addClass("hide");
+      $("#research").removeClass("hide");
     }
+    else if (section == "/home") {
+      $("#index").addClass("hide");
+      $("#research").addClass("hide");
+      $("#projects").addClass("hide");
+      $("#home").removeClass("hide");
+    }
+
     // onclick of one of the navigation buttons
     $( "a[data-hide]" ).on( "click", function() {
       $(window).scrollTop(0);
@@ -62,3 +69,4 @@ var section = window.location.pathname;
     $(window).on('beforeunload', function() {
       $(window).scrollTop(0);
     });
+
