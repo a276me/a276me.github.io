@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -f index_ref.html)",
+      "Bash(printf '.DS_Store\\\\n*.sb-*\\\\n')"
+    ]
+  }
+}

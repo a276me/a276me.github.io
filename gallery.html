@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery — Huajian Yang Astrophotography</title>
+  <meta name="description" content="A gallery of deep-sky astrophotography — nebulae, galaxies, and the Milky Way — all captured by Huajian Yang." />
+  <meta name="author" content="Huajian Yang" />
+  <meta property="og:title" content="Astrophotography Gallery — Huajian Yang" />
+  <meta property="og:image" content="ANDROMsmall.png" />
+
+  <link rel="icon" href="galaxy.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a class="brand" href="index.html">
+      <img src="galaxy.png" alt="" />
+      <span>Huajian&nbsp;Yang</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu">☰</button>
+    <ul class="nav-links" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="gallery.html">Gallery</a></li>
+      <li><a href="research.html">Research</a></li>
+    </ul>
+  </header>
+
+  <main class="section" style="padding-top:clamp(110px,16vw,170px)">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="kicker">The Gallery</p>
+        <h2>Discover the unknown</h2>
+        <p>
+          The universe is a vast and quiet place, full of objects most of us never pause
+          to see — galaxies, star clusters, and glowing clouds of gas light-years across.
+          Every photograph below was taken by me. Click any image to view it full-frame
+          with its details, or open the full-resolution file.
+        </p>
+      </div>
+
+      <div class="gallery">
+        <!-- Andromeda -->
+        <div class="shot reveal"
+             data-full="ANDROM.png" data-src="ANDROMsmall.png"
+             data-cat="Galaxy" data-title="M31 — Andromeda Galaxy"
+             data-desc="The nearest large galaxy to our own — a vast spiral of roughly a trillion stars, slowly drifting toward a future collision with the Milky Way. Its faint glow is one of the most distant things visible to the naked eye."
+             data-catalog="Messier 31" data-constellation="Andromeda"
+             data-type="Barred spiral galaxy" data-distance="≈ 2.5 million ly">
+          <span class="expand">⤢</span>
+          <img src="ANDROMsmall.png" alt="M31, the Andromeda Galaxy" loading="lazy" />
+          <div class="shot-overlay">
+            <span class="cat">Galaxy</span>
+            <h3>M31 — Andromeda</h3>
+            <span class="meta">Andromeda <span class="dot">•</span> ≈ 2.5 M ly</span>
+          </div>
+        </div>
+
+        <!-- Orion Nebula -->
+        <div class="shot reveal" data-delay="60"
+             data-full="ORION.png" data-src="ORIONsmall.png"
+             data-cat="Nebula" data-title="M42 — Orion Nebula"
+             data-desc="A luminous stellar nursery in the sword of Orion, where new stars are igniting from collapsing clouds of hydrogen. Visible to the unaided eye as a faint smudge just below Orion's Belt."
+             data-catalog="Messier 42" data-constellation="Orion"
+             data-type="Emission / reflection nebula" data-distance="≈ 1,340 ly">
+          <span class="expand">⤢</span>
+          <img src="ORIONsmall.png" alt="M42, the Orion Nebula" loading="lazy" />
+          <div class="shot-overlay">
+            <span class="cat">Nebula</span>
+            <h3>M42 — Orion Nebula</h3>
+            <span class="meta">Orion <span class="dot">•</span> Stellar nursery</span>
+          </div>
+        </div>
+
+        <!-- Flame & Horsehead -->
+        <div class="shot reveal" data-delay="120"
+             data-full="NGC2024.png" data-src="NGC2024small.png"
+             data-cat="Nebula" data-title="Flame &amp; Horsehead Nebulae"
+             data-desc="Two icons of Orion side by side — the glowing Flame Nebula (NGC 2024) and the dark, horse-shaped pillar of the Horsehead (Barnard 33) silhouetted against the red emission gas of IC 434."
+             data-catalog="NGC 2024 · IC 434" data-constellation="Orion"
+             data-type="Emission &amp; dark nebula" data-distance="≈ 1,300 ly">
+          <span class="expand">⤢</span>
+          <img src="NGC2024small.png" alt="The Flame and Horsehead Nebulae" loading="lazy" />
+          <div class="shot-overlay">
+            <span class="cat">Nebula</span>
+            <h3>Flame &amp; Horsehead</h3>
+            <span class="meta">Orion <span class="dot">•</span> NGC&nbsp;2024 / IC&nbsp;434</span>
+          </div>
+        </div>
+
+        <!-- Milky Way -->
+        <div class="shot reveal"
+             data-full="milkyway.png" data-src="milkywaysmall.png"
+             data-cat="Panorama" data-title="The Milky Way"
+             data-desc="Our home galaxy seen edge-on: billions of stars, dust lanes, and distant nebulae compressed into a luminous band stretching across a genuinely dark sky."
+             data-catalog="The Milky Way" data-constellation="Sagittarius ↔ Cygnus"
+             data-type="Barred spiral galaxy (our own)" data-distance="We're inside it">
+          <span class="expand">⤢</span>
+          <img src="milkywaysmall.png" alt="The Milky Way galaxy band" loading="lazy" />
+          <div class="shot-overlay">
+            <span class="cat">Panorama</span>
+            <h3>The Milky Way</h3>
+            <span class="meta">Home galaxy <span class="dot">•</span> Edge-on view</span>
+          </div>
+        </div>
+
+        <!-- North America Nebula -->
+        <div class="shot reveal" data-delay="60"
+             data-full="NA.jpg" data-src="NAsmall.png"
+             data-cat="Nebula" data-title="NGC 7000 — North America Nebula"
+             data-desc="A vast cloud of glowing hydrogen in Cygnus whose outline mirrors the continent of North America — complete with a dark 'Gulf of Mexico' carved out by intervening dust."
+             data-catalog="NGC 7000 · Caldwell 20" data-constellation="Cygnus"
+             data-type="Emission nebula (H II region)" data-distance="≈ 2,200 ly">
+          <span class="expand">⤢</span>
+          <img src="NAsmall.png" alt="NGC 7000, the North America Nebula" loading="lazy" />
+          <div class="shot-overlay">
+            <span class="cat">Nebula</span>
+            <h3>North America Nebula</h3>
+            <span class="meta">Cygnus <span class="dot">•</span> NGC&nbsp;7000</span>
+          </div>
+        </div>
+
+        <!-- Sadr Region -->
+        <div class="shot reveal" data-delay="120"
+             data-full="SADR.png" data-src="SADRsmall.png"
+             data-cat="Nebula" data-title="IC 1318 — Sadr Region"
+             data-desc="Sprawling emission nebulae surrounding Sadr, the brilliant star at the heart of the Northern Cross in Cygnus, laced with intricate dark dust lanes."
+             data-catalog="IC 1318" data-constellation="Cygnus"
+             data-type="Emission nebula" data-distance="≈ 3,700 ly">
+          <span class="expand">⤢</span>
+          <img src="SADRsmall.png" alt="IC 1318, the Sadr region in Cygnus" loading="lazy" />
+          <div class="shot-overlay">
+            <span class="cat">Nebula</span>
+            <h3>IC 1318 — Sadr Region</h3>
+            <span class="meta">Cygnus <span class="dot">•</span> Gamma Cygni</span>
+          </div>
+        </div>
+
+        <!-- Lagoon & Trifid -->
+        <div class="shot reveal"
+             data-full="LAGOON.jpeg" data-src="LAGOON.jpeg"
+             data-cat="Nebula" data-title="M8 &amp; M20 — Lagoon &amp; Trifid"
+             data-desc="Two showpieces of the summer Milky Way in Sagittarius — the broad, bright Lagoon Nebula (M8) and the three-lobed Trifid (M20), both vigorous regions of ongoing star formation."
+             data-catalog="Messier 8 · Messier 20" data-constellation="Sagittarius"
+             data-type="Emission nebula" data-distance="≈ 4,100 ly">
+          <span class="expand">⤢</span>
+          <img src="LAGOON.jpeg" alt="M8 and M20, the Lagoon and Trifid Nebulae" loading="lazy" />
+          <div class="shot-overlay">
+            <span class="cat">Nebula</span>
+            <h3>Lagoon &amp; Trifid</h3>
+            <span class="meta">Sagittarius <span class="dot">•</span> M8 / M20</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="index.html">
+        <img src="galaxy.png" alt="" />
+        <span>Huajian Yang</span>
+      </a>
+      <p class="footer-meta">© <span id="year">2026</span> Huajian Yang · All photographs shot by me.</p>
+      <div class="socials">
+        <a href="https://github.com/a276me" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.42.37.8 1.09.8 2.2v3.26c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+        </a>
+        <a href="mailto:hy586@cornell.edu" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <div class="lightbox-stage">
+      <button class="lb-close" aria-label="Close viewer">✕</button>
+      <button class="lb-nav lb-prev" aria-label="Previous image">‹</button>
+      <button class="lb-nav lb-next" aria-label="Next image">›</button>
+      <div class="lightbox-img"><img src="" alt="" /></div>
+      <div class="lightbox-info">
+        <span class="cat"></span>
+        <h3></h3>
+        <p class="desc"></p>
+        <div class="lb-specs"></div>
+        <a class="btn btn-primary lb-full" href="" target="_blank" rel="noopener">View full resolution ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
